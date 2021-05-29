@@ -1,0 +1,7 @@
+n,k=map(int,input().split())
+a=''.join(input().split())
+b=''.join(input().split())
+ah=int(a,2)
+bh=int(b,2)
+B_ab=bin(ah^bh)[2:].count('1')
+print(n-abs(B_ab-k))
